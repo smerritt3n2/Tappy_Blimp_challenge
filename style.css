@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hammersmith One', sans-serif;
+  }
+
+  canvas {
+    background-image: url("img/sky.png");
+    width: 1024px;
+    height: 768px;
+  }
+  
+  .hide {
+    visibility: hidden;
+  }
+
+  .gameStart {
+    position: absolute;
+    background-image: url("img/starting_screen.PNG");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1024px;
+    height: 768px;
+    z-index: 2;
+  }
+
+  .gameOver {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width: 1024px;
+    height: 768px;
+    text-align: center;
+    padding: 3em;
+    font-size: 30px;
+  }
+
+  .gameOver span {
+    display: block;
+  }
+
+  .textColor {
+    color: #fff;
+    -webkit-text-stroke: 2px #000;
+  }
+
+  .input {
+    width: -webkit-fill-available;
+    height: 50px;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .btn {
+    border-radius: 15px;
+  }
+
+  .try-btn {
+    background-image: url("img/restart-button.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 324.55px;
+    height: 74.41px;
+    margin: 20px;
+  }
+
+  .try-btn:hover {
+    background-image: url("img/restart-button-hover.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .sub-btn {
+    background-image: url("img/submit-button.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 298.55px;
+    height: 74.41px;
+    margin: 20px;
+  }
+
+  .sub-btn:hover {
+    background-image: url("img/submit-button-hover.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }

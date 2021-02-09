@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tappy Blimp Project</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/4900ec6f7f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="game-container">
+  
+  <!--============= Start Panel ===============-->
+  <section class="gameStart" id="start">
+  </section>
+  <!--=========================================-->
+
+  <!--=========== Game Over Panel =============-->
+  <section class="gameOver hide" id="finish">
+    <h1 class="textColor">Game over!</h1>
+    <h2 class="textColor">Your final score was:</h2>
+      <div id="results" class="textColor">
+        <!-- Score Results -->
+      </div>
+    <p class="textColor">Enter your E-mail and click teh button below to submit your score</p>
+    <input type="text" class="input">
+    <span>
+      <button onclick="tryAgain()" class="btn try-btn"></button>
+      <button class="btn sub-btn"></button>
+    </span>
+  </section>
+  <!--=========================================-->
+
+  <canvas id="game"></canvas>    
+</div>
+  
+
+  <script src="main.js"></script>
+  <script src="blimp.js"></script>
+  <script src="clouds.js"></script>
+
+</body>
+</html>
